@@ -29,7 +29,7 @@ export function LogoMarquee() {
           {[...LOGOS, ...LOGOS].map((logo, i) => (
             <div
               key={i}
-              className="mx-6 flex h-18 shrink-0 items-center justify-center"
+              className="mx-6 flex h-16 shrink-0 items-center justify-center"
             >
               <img
                 src={logo.src}
