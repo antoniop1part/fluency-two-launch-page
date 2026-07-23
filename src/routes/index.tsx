@@ -11,13 +11,13 @@ import { Footer } from "@/components/landing/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "fluênc.ia 2.0 — 18/08 às 19h30 | Better Work" },
+      { title: "fluênc.ia 2.0 | the news BW" },
       {
         name: "description",
         content:
           "Evento ao vivo com diretores executivos sobre como aproveitar a maior janela de oportunidade da sua carreira na era da IA. 18/08 às 19h30.",
       },
-      { property: "og:title", content: "fluênc.ia 2.0 — 18/08 às 19h30" },
+      { property: "og:title", content: "fluênc.ia 2.0 | the news BW" },
       {
         property: "og:description",
         content:
@@ -37,8 +37,8 @@ function Index() {
       <Hero />
       <LogoMarquee />
       <AudienceCard />
-      <Panel />
       <Timeline />
+      <Panel />
       <Faq />
       <Footer />
     </div>
