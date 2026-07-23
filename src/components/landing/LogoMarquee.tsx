@@ -22,19 +22,19 @@ export function LogoMarquee() {
   return (
     <section
       aria-label="Empresas"
-      className="border-y border-[color:var(--line)] bg-canvas-deep py-7 overflow-hidden"
+      className="border-y border-[color:var(--line)] bg-white py-10 overflow-hidden"
     >
       <div className="marquee">
         <div className="marquee-track">
           {[...LOGOS, ...LOGOS].map((logo, i) => (
             <div
               key={i}
-              className="mx-4 flex h-14 shrink-0 items-center justify-center rounded-xl bg-white px-5"
+              className="mx-12 flex h-16 shrink-0 items-center justify-center"
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-8 w-auto max-w-[140px] object-contain"
+                className="h-full w-auto max-w-[200px] object-contain"
                 loading="lazy"
               />
             </div>
