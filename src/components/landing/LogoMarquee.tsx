@@ -3,8 +3,8 @@ import heineken from "@/assets/logos/heineken.png.asset.json";
 import ifood from "@/assets/logos/ifood.png.asset.json";
 import microsoft from "@/assets/logos/microsoft.png.asset.json";
 import waze from "@/assets/logos/waze.png.asset.json";
-import xp from "@/assets/logos/xp.webp.asset.json";
-import btg from "@/assets/logos/btg.webp.asset.json";
+import xp from "@/assets/logos/xp.png.asset.json";
+import btg from "@/assets/logos/btg.png.asset.json";
 import duolingo from "@/assets/logos/duolingo.png.asset.json";
 
 const LOGOS = [
@@ -34,7 +34,7 @@ export function LogoMarquee() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-full w-auto max-w-[140px] object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
+                className="h-full w-auto max-w-[140px] object-contain"
                 loading="lazy"
               />
             </div>
