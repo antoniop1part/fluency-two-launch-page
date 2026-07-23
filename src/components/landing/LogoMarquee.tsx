@@ -22,7 +22,7 @@ export function LogoMarquee() {
   return (
     <section
       aria-label="Empresas"
-      className="border-y border-[color:var(--line)] bg-white py-2 overflow-hidden"
+      className="border-y border-[0.5px] border-[color:var(--line)] bg-white py-1 overflow-hidden"
     >
       <div className="marquee">
         <div className="marquee-track">
