@@ -7,13 +7,13 @@ const GROUP_URL = "https://chat.whatsapp.com/SEU-LINK-AQUI";
 export const Route = createFileRoute("/obrigado")({
   head: () => ({
     meta: [
-      { title: "Inscrição confirmada — fluênc.ia 2.0" },
+      { title: "Inscrição confirmada | fluênc.ia 2.0" },
       {
         name: "description",
         content:
           "Sua inscrição no fluênc.ia 2.0 foi confirmada. Entre no grupo do WhatsApp para receber os materiais e o link da aula ao vivo.",
       },
-      { property: "og:title", content: "Inscrição confirmada — fluênc.ia 2.0" },
+      { property: "og:title", content: "Inscrição confirmada | fluênc.ia 2.0" },
       {
         property: "og:description",
         content:

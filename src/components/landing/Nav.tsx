@@ -3,8 +3,8 @@ import { Menu, X } from "lucide-react";
 
 const MENU = [
   { n: "01", label: "Aula", href: "#top" },
-  { n: "02", label: "Painel", href: "#painel" },
-  { n: "03", label: "O que esperar", href: "#agenda" },
+  { n: "02", label: "O que esperar", href: "#agenda" },
+  { n: "03", label: "Painel", href: "#painel" },
   { n: "04", label: "FAQ", href: "#faq" },
 ];
 

@@ -39,7 +39,7 @@ export function Panel() {
           Convidados do Painel
         </h2>
         <p className="mt-3 max-w-[560px] text-[16px] text-ink-soft">
-          Quem já confirmou presença — arraste ou use as setas.
+          Quem já confirmou presença. Arraste ou use as setas.
         </p>
       </Reveal>
 
