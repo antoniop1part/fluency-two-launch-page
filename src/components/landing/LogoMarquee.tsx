@@ -22,19 +22,19 @@ export function LogoMarquee() {
   return (
     <section
       aria-label="Empresas"
-      className="border-y border-[color:var(--line)] bg-white py-10 overflow-hidden"
+      className="border-y border-[color:var(--line)] bg-white py-2 overflow-hidden"
     >
       <div className="marquee">
         <div className="marquee-track">
           {[...LOGOS, ...LOGOS].map((logo, i) => (
             <div
               key={i}
-              className="mx-12 flex h-16 shrink-0 items-center justify-center"
+              className="mx-10 flex h-20 shrink-0 items-center justify-center"
             >
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-full w-auto max-w-[200px] object-contain"
+                className="h-full w-auto max-w-[260px] object-contain"
                 loading="lazy"
               />
             </div>
@@ -46,9 +46,10 @@ export function LogoMarquee() {
         .marquee-track {
           display: flex;
           width: max-content;
-          animation: marqueeSlide 40s linear infinite;
+          animation: marqueeSlide 20s linear infinite;
         }
       `}</style>
     </section>
   );
 }
+
