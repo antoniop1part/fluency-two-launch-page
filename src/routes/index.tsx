@@ -1,24 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/landing/Nav";
+import { Hero } from "@/components/landing/Hero";
+import { LogoMarquee } from "@/components/landing/LogoMarquee";
+import { AudienceCard } from "@/components/landing/AudienceCard";
+import { Panel } from "@/components/landing/Panel";
+import { Timeline } from "@/components/landing/Timeline";
+import { Faq } from "@/components/landing/Faq";
+import { Footer } from "@/components/landing/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "fluênc.ia 2.0 — 18/08 às 19h30 | Better Work" },
+      {
+        name: "description",
+        content:
+          "Evento ao vivo com diretores executivos sobre como aproveitar a maior janela de oportunidade da sua carreira na era da IA. 18/08 às 19h30.",
+      },
+      { property: "og:title", content: "fluênc.ia 2.0 — 18/08 às 19h30" },
+      {
+        property: "og:description",
+        content:
+          "Aprenda com diretores executivos o caminho para se tornar o profissional que eles premiam e promovem na era de IA.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-canvas text-ink">
+      <Nav />
+      <Hero />
+      <LogoMarquee />
+      <AudienceCard />
+      <Panel />
+      <Timeline />
+      <Faq />
+      <Footer />
     </div>
   );
 }
