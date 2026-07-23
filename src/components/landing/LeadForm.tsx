@@ -1,5 +1,12 @@
 import { useState, type FormEvent } from "react";
-import { ArrowRight, Check, Loader2 } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
+import { ArrowRight, Loader2 } from "lucide-react";
+
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, unknown>>;
+  }
+}
 
 const SENIORITY = [
   "Em transição de emprego",
