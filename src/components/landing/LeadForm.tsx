@@ -35,7 +35,7 @@ export function LeadForm({ id }: { id?: string }) {
   const [values, setValues] = useState<Values>({});
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState(false);
+  const navigate = useNavigate();
 
   const current = STEPS[step];
   const isLast = step === STEPS.length - 1;
@@ -59,32 +59,24 @@ export function LeadForm({ id }: { id?: string }) {
     }
     setLoading(true);
     setTimeout(() => {
-      setLoading(false);
-      setDone(true);
+      const payload = {
+        email: values.email ?? "",
+        name: values.name ?? "",
+        seniority: values.seniority ?? "",
+        whatsapp: values.whatsapp ?? "",
+      };
+      if (typeof window !== "undefined") {
+        window.dataLayer = window.dataLayer ?? [];
+        window.dataLayer.push({
+          event: "form_submitted_ia",
+          form: "fluencia_2_lead",
+          ...payload,
+        });
+      }
+      navigate({ to: "/obrigado" });
     }, 700);
   }
 
-  if (done) {
-    return (
-      <div className="rounded-[16px] bg-surface p-8 text-center shadow-[var(--shadow-card)]" id={id}>
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[color:var(--glow-blue)]/12 text-[color:var(--glow-blue)]">
-          <Check className="h-7 w-7" strokeWidth={2.5} />
-        </div>
-        <h3 className="mt-5 font-display text-2xl font-bold text-ink">Vaga reservada!</h3>
-        <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
-          Agora sim! Clique no botão abaixo pra entrar no grupo de WhatsApp e ficar por dentro
-          de tudo (zero spam, só criamos o grupo pra facilitar a vida de todos ao encaminhar os
-          materiais).
-        </p>
-        <a
-          href="#"
-          className="mt-6 inline-flex items-center justify-center rounded-[8px] bg-ink-strong px-5 py-3 text-sm font-semibold text-canvas transition-transform hover:-translate-y-[1px]"
-        >
-          Entrar no grupo de WhatsApp
-        </a>
-      </div>
-    );
-  }
 
   const progress = ((step + 1) / STEPS.length) * 100;
 
