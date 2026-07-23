@@ -18,7 +18,7 @@ export function Hero() {
 
         <Reveal slow immediate as="div" className="mt-6">
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.02] tracking-[-0.03em] text-ink sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem]">
-            <em className="font-extrabold italic">IA:</em>{" "}
+            <em className="hero-underline font-extrabold italic">IA</em>:{" "}
             Como aproveitar a maior janela de oportunidade da sua carreira{" "}
             <span className="block text-[0.55em] font-medium text-ink-soft sm:inline sm:text-[0.4em]">
               (antes que ela se feche)
