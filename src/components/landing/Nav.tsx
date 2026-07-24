@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/fluencia-logo-final.png.asset.json";
+import logo from "@/assets/fluencia-logo-v2.png.asset.json";
 
 const MENU = [
   { n: "01", label: "Aula", href: "#top" },
@@ -28,7 +28,7 @@ export function Nav() {
             <img
               src={logo.url}
               alt="fluênc.ia"
-              className="h-6 w-auto object-contain"
+              className="h-10 w-auto object-contain"
             />
           </a>
           <span className="date-badge relative hidden items-center gap-1.5 overflow-hidden rounded-full px-3 py-1.5 font-mono text-[11px] font-bold text-[#fdfbf4] sm:inline-flex min-[401px]:inline-flex">
