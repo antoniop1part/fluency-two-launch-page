@@ -25,7 +25,11 @@ export function Nav() {
       <div className="flex items-center justify-between gap-3 rounded-full border border-[color:var(--line)] bg-white/70 py-2 pl-3 pr-2 shadow-[0_6px_24px_rgba(20,21,27,0.08)] backdrop-blur-xl">
         <div className="flex min-w-0 items-center gap-2">
           <a href="#top" className="flex items-center gap-2 pl-1 pr-2">
-            <span className="font-display text-[15px] italic font-bold text-ink">BW Classes</span>
+            <img
+              src={logo.url}
+              alt="fluênc.ia"
+              className="h-6 w-auto object-contain"
+            />
           </a>
           <span className="date-badge relative hidden items-center gap-1.5 overflow-hidden rounded-full px-3 py-1.5 font-mono text-[11px] font-bold text-[#fdfbf4] sm:inline-flex min-[401px]:inline-flex">
             <span aria-hidden>📅</span>
