@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/fluencia-logo-transparent.png.asset.json";
 
 const MENU = [
   { n: "01", label: "Aula", href: "#top" },
