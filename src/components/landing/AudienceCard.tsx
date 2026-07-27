@@ -13,7 +13,7 @@ export function AudienceCard() {
           }}
         >
           <h2 className="font-display text-3xl font-bold leading-tight text-[#f4f3ef] md:text-5xl">
-            Pra quem é o <em className="italic">fluênc.ia 2.0</em>?
+            Pra quem é esse painel exclusivo?
           </h2>
         </div>
         <div className="space-y-5 px-8 py-10 md:px-12 md:py-14">

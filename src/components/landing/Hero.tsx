@@ -18,7 +18,6 @@ export function Hero() {
 
         <Reveal slow immediate as="div" className="mt-6">
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.02] tracking-[-0.03em] text-ink sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem]">
-            <em className="hero-underline font-extrabold italic">IA</em>:{" "}
             Como aproveitar a maior janela de oportunidade da sua carreira{" "}
             <span className="block text-[0.55em] font-medium text-ink-soft sm:inline sm:text-[0.4em]">
               (antes que ela se feche)
@@ -27,10 +26,9 @@ export function Hero() {
         </Reveal>
 
         <Reveal slow immediate as="p" className="mx-auto mt-6 max-w-[640px] text-[17px] leading-relaxed text-ink-soft md:text-[19px]">
-          Aprenda com diretores <u className="hero-underline">executivos</u> o caminho para se
-          tornar o profissional que eles premiam e{" "}
-          <u className="hero-underline">promovem</u> na era de{" "}
-          <u className="hero-underline">IA</u>.
+          O painel para você aprender com <u className="hero-underline">líderes</u> e{" "}
+          <u className="hero-underline">executivos</u> o caminho pra se tornar o profissional que eles premiam e{" "}
+          <u className="hero-underline">promovem</u> na era da <u className="hero-underline">IA</u>.
         </Reveal>
 
         <Reveal slow immediate as="div" className="mx-auto mt-10 max-w-[520px]">
