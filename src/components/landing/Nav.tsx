@@ -4,7 +4,7 @@ import logo from "@/assets/fluencia-logo-v2.png.asset.json";
 
 const MENU = [
   { n: "01", label: "Aula", href: "#top" },
-  { n: "02", label: "O que esperar", href: "#agenda" },
+  { n: "02", label: "O que esperar | 18/08", href: "#agenda" },
   { n: "03", label: "Painel", href: "#painel" },
   { n: "04", label: "FAQ", href: "#faq" },
 ];
