@@ -1,5 +1,8 @@
 import { Gift } from "lucide-react";
 import { Reveal } from "./Reveal";
+import rockInRio from "@/assets/logos/rock-in-rio.png.asset.json";
+import xpSquare from "@/assets/logos/xp-square.png.asset.json";
+import tnsBw from "@/assets/logos/tns-bw.png.asset.json";
 
 type Item = {
   marker: string;
@@ -8,6 +11,8 @@ type Item = {
   description?: string;
   bullets?: string[];
   bonus?: boolean;
+  image?: string;
+  imageAlt?: string;
 };
 
 const ITEMS: Item[] = [
