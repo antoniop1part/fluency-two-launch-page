@@ -14,21 +14,23 @@ const ITEMS: Item[] = [
   {
     marker: "01",
     label: "Etapa 1",
-    title: "Papo com o CEO: como seu chefe está olhando para essa oportunidade",
-    description: "Em breve mais detalhes.",
+    title: "CEO do Rock in Rio: como seu chefe enxerga essa oportunidade",
+    description:
+      "Entenda porque Inteligência Artificial criou uma posição onde a maior alavanca não é ser técnico ou desenvolvedor.",
   },
   {
     marker: "02",
     label: "Etapa 2",
-    title: "Papo com Head de RH: como o recrutador vai te avaliar sobre fluência em IA",
-    description: "Em breve mais detalhes.",
+    title: "Papo com a Head de RH da XP: como o recrutador vai avaliar sua fluência em IA",
+    description:
+      "Entenda porque quem ganha nesse jogo não é o colaborador que mais investe infinitas horas aprendendo novas ferramentas.",
   },
   {
     marker: "03",
     label: "Etapa 3",
-    title: "O caminho para capturar a maior oportunidade dessa geração no trabalho",
+    title: "Como aplicar o que você viu no painel para alavancar sua carreira",
     description:
-      "Ferramentas de IA e um framework exclusivo sobre como executar o que os mentores do evento vão compartilhar ao vivo.",
+      "Um guia passo a passo com ferramentas práticas aplicadas ao seu contexto e nível de fluência em IA.",
   },
   {
     marker: "gift",
