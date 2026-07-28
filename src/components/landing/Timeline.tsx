@@ -93,12 +93,23 @@ export function Timeline() {
               }`}
             >
               <div className="flex gap-4">
-                <div
-                  className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
-                  aria-hidden
-                >
-                  [imagem]
-                </div>
+                {it.image ? (
+                  <div className="hidden h-24 w-32 shrink-0 items-center justify-center overflow-hidden rounded-[10px] bg-white p-3 sm:flex">
+                    <img
+                      src={it.image}
+                      alt={it.imageAlt}
+                      loading="lazy"
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
+                    aria-hidden
+                  >
+                    [imagem]
+                  </div>
+                )}
                 <div className="flex-1">
                   <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">
                     {it.label}
