@@ -1,5 +1,8 @@
 import { Gift } from "lucide-react";
 import { Reveal } from "./Reveal";
+import rockInRio from "@/assets/logos/rock-in-rio.png.asset.json";
+import xpSquare from "@/assets/logos/xp-square.png.asset.json";
+import tnsBw from "@/assets/logos/tns-bw.png.asset.json";
 
 type Item = {
   marker: string;
@@ -8,6 +11,8 @@ type Item = {
   description?: string;
   bullets?: string[];
   bonus?: boolean;
+  image?: string;
+  imageAlt?: string;
 };
 
 const ITEMS: Item[] = [
@@ -17,6 +22,8 @@ const ITEMS: Item[] = [
     title: "CEO do Rock in Rio: como seu chefe enxerga essa oportunidade",
     description:
       "Entenda porque Inteligência Artificial criou uma posição onde a maior alavanca não é ser técnico ou desenvolvedor.",
+    image: rockInRio.url,
+    imageAlt: "Logo do Rock in Rio",
   },
   {
     marker: "02",
@@ -24,6 +31,8 @@ const ITEMS: Item[] = [
     title: "Papo com a Head de RH da XP: como o recrutador vai avaliar sua fluência em IA",
     description:
       "Entenda porque quem ganha nesse jogo não é o colaborador que mais investe infinitas horas aprendendo novas ferramentas.",
+    image: xpSquare.url,
+    imageAlt: "Logo da XP",
   },
   {
     marker: "03",
@@ -31,6 +40,8 @@ const ITEMS: Item[] = [
     title: "Como aplicar o que você viu no painel para alavancar sua carreira",
     description:
       "Um guia passo a passo com ferramentas práticas aplicadas ao seu contexto e nível de fluência em IA.",
+    image: tnsBw.url,
+    imageAlt: "Logo the news Better Work",
   },
   {
     marker: "gift",
@@ -82,12 +93,23 @@ export function Timeline() {
               }`}
             >
               <div className="flex gap-4">
-                <div
-                  className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
-                  aria-hidden
-                >
-                  [imagem]
-                </div>
+                {it.image ? (
+                  <div className="hidden h-24 w-32 shrink-0 items-center justify-center overflow-hidden rounded-[10px] bg-white p-3 sm:flex">
+                    <img
+                      src={it.image}
+                      alt={it.imageAlt}
+                      loading="lazy"
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
+                    aria-hidden
+                  >
+                    [imagem]
+                  </div>
+                )}
                 <div className="flex-1">
                   <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">
                     {it.label}
