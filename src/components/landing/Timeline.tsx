@@ -22,6 +22,8 @@ const ITEMS: Item[] = [
     title: "CEO do Rock in Rio: como seu chefe enxerga essa oportunidade",
     description:
       "Entenda porque Inteligência Artificial criou uma posição onde a maior alavanca não é ser técnico ou desenvolvedor.",
+    image: rockInRio.url,
+    imageAlt: "Logo do Rock in Rio",
   },
   {
     marker: "02",
@@ -29,6 +31,8 @@ const ITEMS: Item[] = [
     title: "Papo com a Head de RH da XP: como o recrutador vai avaliar sua fluência em IA",
     description:
       "Entenda porque quem ganha nesse jogo não é o colaborador que mais investe infinitas horas aprendendo novas ferramentas.",
+    image: xpSquare.url,
+    imageAlt: "Logo da XP",
   },
   {
     marker: "03",
@@ -36,6 +40,8 @@ const ITEMS: Item[] = [
     title: "Como aplicar o que você viu no painel para alavancar sua carreira",
     description:
       "Um guia passo a passo com ferramentas práticas aplicadas ao seu contexto e nível de fluência em IA.",
+    image: tnsBw.url,
+    imageAlt: "Logo the news Better Work",
   },
   {
     marker: "gift",
