@@ -12,7 +12,7 @@ export function Hero() {
         <Reveal slow immediate>
           <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--line)] bg-black/[0.03] px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider text-ink">
             <span className="live-dot inline-block h-2 w-2 rounded-full bg-[#e0293e]" />
-            Evento ao vivo 18/08 às 19h30.
+            Evento ao vivo 09/09 às 19h30.
           </span>
         </Reveal>
 

@@ -4,7 +4,7 @@ import logo from "@/assets/fluencia-logo-v4.png.asset.json";
 
 const MENU = [
   { n: "01", label: "Aula", href: "#top" },
-  { n: "02", label: "O que esperar | 18/08", href: "#agenda" },
+  { n: "02", label: "O que esperar | 09/09", href: "#agenda" },
   { n: "03", label: "Painel", href: "#painel" },
   { n: "04", label: "FAQ", href: "#faq" },
 ];
@@ -33,7 +33,7 @@ export function Nav() {
           </a>
           <span className="date-badge relative hidden items-center gap-1.5 overflow-hidden rounded-full px-3 py-1.5 font-mono text-[11px] font-bold text-[#fdfbf4] sm:inline-flex min-[401px]:inline-flex">
             <span aria-hidden>📅</span>
-            18/08 às 19h30
+            09/09 às 19h30
             <span className="date-shimmer" aria-hidden />
           </span>
         </div>
