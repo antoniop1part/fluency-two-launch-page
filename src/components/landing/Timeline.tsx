@@ -24,11 +24,9 @@ const ITEMS: Item[] = [
   {
     marker: "02",
     label: "Etapa 2",
-    title: "Papo com a Head de RH da XP: como o recrutador vai avaliar sua fluência em IA",
+    title: "Papo com o RH: como o recrutador vai avaliar sua fluência em IA",
     description:
       "Entenda porque quem ganha nesse jogo não é o colaborador que mais investe infinitas horas aprendendo novas ferramentas.",
-    image: xpSquare.url,
-    imageAlt: "Logo da XP",
   },
   {
     marker: "03",
