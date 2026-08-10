@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Evento ao vivo com diretores executivos sobre como aproveitar a maior janela de oportunidade da sua carreira na era da IA. 18/08 às 19h30.",
+          "Evento ao vivo com diretores executivos sobre como aproveitar a maior janela de oportunidade da sua carreira na era da IA. 09/09 às 19h30.",
       },
       { property: "og:title", content: "fluênc.ia 2.0 | the news BW" },
       {

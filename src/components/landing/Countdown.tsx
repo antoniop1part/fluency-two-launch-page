@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-// 18/08/2026 19:30 BRT (-03:00)
-const TARGET = new Date("2026-08-18T19:30:00-03:00").getTime();
+// 09/09/2026 19:30 BRT (-03:00)
+const TARGET = new Date("2026-09-09T19:30:00-03:00").getTime();
 
 function calc(now: number) {
   const diff = Math.max(0, TARGET - now);

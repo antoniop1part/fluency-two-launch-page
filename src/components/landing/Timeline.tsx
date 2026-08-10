@@ -62,7 +62,7 @@ export function Timeline() {
       <Reveal>
         <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">Agenda</p>
         <h2 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-          O que esperar | 18/08
+          O que esperar | 09/09
         </h2>
         <p className="mt-3 text-[16px] text-ink-soft">
           Como o Painel vai funcionar, do início ao bônus.
