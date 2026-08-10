@@ -28,9 +28,8 @@ export function Nav() {
             <img
               src={logo.url}
               alt="fluênc.ia 2.0 | the news Better Work"
-              className="h-7 w-auto object-contain"
+              className="h-auto w-[168px] max-w-[46vw] shrink-0 object-contain"
             />
-
           </a>
           <span className="date-badge relative hidden items-center gap-1.5 overflow-hidden rounded-full px-3 py-1.5 font-mono text-[11px] font-bold text-[#fdfbf4] sm:inline-flex min-[401px]:inline-flex">
             <span aria-hidden>📅</span>
