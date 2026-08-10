@@ -1,10 +1,13 @@
 import { Reveal } from "./Reveal";
+import digoLemosPhoto from "@/assets/digo-lemos.jpg.asset.json";
 
 type Guest = {
   name: string;
   role?: string;
   bio?: string[];
   showSilhouette?: boolean;
+  image?: string;
+  imageAlt?: string;
 };
 
 const GUESTS: Guest[] = [
@@ -16,6 +19,8 @@ const GUESTS: Guest[] = [
       "Ele também é sócio e parte do time fundador da Link School of Business, uma das faculdades mais inovadoras do mundo, onde liderou a criação da área de investimentos em startups, captando e investindo mais de R$ 5 milhões.",
       "Rodrigo é pós graduado em Neurociência aplicada à Educação, empreende com educação há 8 anos e agora lidera a construção dos cursos da Better Work.",
     ],
+    image: digoLemosPhoto.url,
+    imageAlt: "Foto de Digo Lemos",
   },
   { name: "Em breve...", showSilhouette: true },
   { name: "Em breve...", showSilhouette: true },
@@ -46,9 +51,17 @@ export function Panel() {
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
         {GUESTS.map((g, i) => (
           <Reveal key={i} as="article" className="overflow-hidden rounded-[16px] bg-surface shadow-[var(--shadow-card)]">
-            <div className="relative flex aspect-[4/5] items-center justify-center bg-canvas-deep">
+            <div className="relative flex aspect-[4/5] items-center justify-center bg-canvas-deep overflow-hidden">
+              {g.image && (
+                <img
+                  src={g.image}
+                  alt={g.imageAlt}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              )}
               {g.showSilhouette && <Silhouette />}
-              <span className="absolute bottom-3 left-3 rounded-full bg-black/70 px-2 py-1 font-mono text-[10px] tracking-wider text-white">
+              <span className="absolute bottom-3 left-3 rounded-full bg-black/70 px-2 py-1 font-mono text-[10px] tracking-wider text-white z-10">
                 {String(i + 1).padStart(2, "0")}/03
               </span>
             </div>
