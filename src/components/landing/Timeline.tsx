@@ -98,11 +98,9 @@ export function Timeline() {
                   </div>
                 ) : (
                   <div
-                    className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
+                    className="hidden h-24 w-32 shrink-0 rounded-[10px] bg-canvas-deep sm:flex"
                     aria-hidden
-                  >
-                    [imagem]
-                  </div>
+                  />
                 )}
                 <div className="flex-1">
                   <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">
