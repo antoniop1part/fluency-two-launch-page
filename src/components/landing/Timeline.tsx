@@ -1,6 +1,5 @@
 import { Gift } from "lucide-react";
 import { Reveal } from "./Reveal";
-import xpSquare from "@/assets/logos/xp-square.png.asset.json";
 import tnsBw from "@/assets/logos/tns-bw.png.asset.json";
 
 type Item = {
@@ -25,11 +24,9 @@ const ITEMS: Item[] = [
   {
     marker: "02",
     label: "Etapa 2",
-    title: "Papo com a Head de RH da XP: como o recrutador vai avaliar sua fluência em IA",
+    title: "Papo com o RH: como o recrutador vai avaliar sua fluência em IA",
     description:
       "Entenda porque quem ganha nesse jogo não é o colaborador que mais investe infinitas horas aprendendo novas ferramentas.",
-    image: xpSquare.url,
-    imageAlt: "Logo da XP",
   },
   {
     marker: "03",
@@ -101,11 +98,9 @@ export function Timeline() {
                   </div>
                 ) : (
                   <div
-                    className="hidden h-24 w-32 shrink-0 items-center justify-center rounded-[10px] bg-canvas-deep font-mono text-[10px] uppercase tracking-wider text-ink-muted sm:flex"
+                    className="hidden h-24 w-32 shrink-0 rounded-[10px] bg-canvas-deep sm:flex"
                     aria-hidden
-                  >
-                    [imagem]
-                  </div>
+                  />
                 )}
                 <div className="flex-1">
                   <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">
