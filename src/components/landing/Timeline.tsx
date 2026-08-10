@@ -1,6 +1,5 @@
 import { Gift } from "lucide-react";
 import { Reveal } from "./Reveal";
-import rockInRio from "@/assets/logos/rock-in-rio.png.asset.json";
 import xpSquare from "@/assets/logos/xp-square.png.asset.json";
 import tnsBw from "@/assets/logos/tns-bw.png.asset.json";
 
@@ -19,11 +18,9 @@ const ITEMS: Item[] = [
   {
     marker: "01",
     label: "Etapa 1",
-    title: "CEO do Rock in Rio: como seu chefe enxerga essa oportunidade",
+    title: "Papo com CEO: como seu chefe enxerga essa oportunidade",
     description:
       "Entenda porque Inteligência Artificial criou uma posição onde a maior alavanca não é ser técnico ou desenvolvedor.",
-    image: rockInRio.url,
-    imageAlt: "Logo do Rock in Rio",
   },
   {
     marker: "02",
