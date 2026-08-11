@@ -72,10 +72,13 @@ export function LeadForm({ id }: { id?: string }) {
         whatsapp: values.whatsapp ?? "",
       };
       if (typeof window !== "undefined") {
+        const utms = getUtms();
         window.dataLayer = window.dataLayer ?? [];
         window.dataLayer.push({
           event: "form_submitted_ia",
           form: "fluencia_2_lead",
+          page_location: window.location.href,
+          ...utms,
           ...payload,
         });
       }
