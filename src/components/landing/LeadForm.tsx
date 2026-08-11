@@ -38,6 +38,11 @@ export function LeadForm({ id }: { id?: string }) {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    captureUtms();
+  }, []);
+
+
   const current = STEPS[step];
   const isLast = step === STEPS.length - 1;
   const value = values[current?.key] ?? "";
