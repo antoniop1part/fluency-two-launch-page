@@ -1,6 +1,7 @@
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowRight, Loader2 } from "lucide-react";
+import { captureUtms, getUtms } from "@/lib/utm";
 
 declare global {
   interface Window {
@@ -37,6 +38,11 @@ export function LeadForm({ id }: { id?: string }) {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    captureUtms();
+  }, []);
+
+
   const current = STEPS[step];
   const isLast = step === STEPS.length - 1;
   const value = values[current?.key] ?? "";
@@ -66,10 +72,13 @@ export function LeadForm({ id }: { id?: string }) {
         whatsapp: values.whatsapp ?? "",
       };
       if (typeof window !== "undefined") {
+        const utms = getUtms();
         window.dataLayer = window.dataLayer ?? [];
         window.dataLayer.push({
           event: "form_submitted_ia",
           form: "fluencia_2_lead",
+          page_location: window.location.href,
+          ...utms,
           ...payload,
         });
       }
