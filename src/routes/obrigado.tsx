@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
 // Substitua pelo link real do grupo de WhatsApp:
-const GROUP_URL = "https://chat.whatsapp.com/SEU-LINK-AQUI";
+const GROUP_URL = "https://sndflw.com/i/QfSjhgrYDuylwg2glBzC";
 
 export const Route = createFileRoute("/obrigado")({
   head: () => ({
