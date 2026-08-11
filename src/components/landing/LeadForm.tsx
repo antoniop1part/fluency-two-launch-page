@@ -1,6 +1,7 @@
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, type FormEvent } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowRight, Loader2 } from "lucide-react";
+import { captureUtms, getUtms } from "@/lib/utm";
 
 declare global {
   interface Window {
