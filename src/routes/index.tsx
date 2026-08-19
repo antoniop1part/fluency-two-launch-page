@@ -4,7 +4,7 @@ import { Hero } from "@/components/landing/Hero";
 import { LogoMarquee } from "@/components/landing/LogoMarquee";
 import { AudienceCard } from "@/components/landing/AudienceCard";
 import { Panel } from "@/components/landing/Panel";
-import { Timeline } from "@/components/landing/Timeline";
+import { Expectations } from "@/components/landing/Expectations";
 import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
 
@@ -37,7 +37,7 @@ function Index() {
       <Hero />
       <LogoMarquee />
       <AudienceCard />
-      <Timeline />
+      <Expectations />
       <Panel />
       <Faq />
       <Footer />

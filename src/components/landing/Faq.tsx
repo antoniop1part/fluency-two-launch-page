@@ -16,6 +16,10 @@ const QA = [
     q: "Preciso ter algum conhecimento prévio em IA?",
     a: "Não, o evento foi desenvolvido para profissionais de quaisquer áreas e níveis de fluência em IA. Vamos cobrir o caminho pra chegar lá independentemente da ferramenta que você usa também.",
   },
+  {
+    q: "Já usei IA antes e não funcionou, por que seria diferente?",
+    a: "Porque o problema não foi você, foi a falta de aplicação direta na sua função. Nesse painel, quem te mostra o caminho é quem decide e avalia isso no seu time, não teoria genérica de ferramenta.",
+  },
 ];
 
 export function Faq() {

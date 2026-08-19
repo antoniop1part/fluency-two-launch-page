@@ -18,17 +18,14 @@ export function Hero() {
 
         <Reveal slow immediate as="div" className="mt-6">
           <h1 className="font-display text-[2.5rem] font-bold leading-[1.02] tracking-[-0.03em] text-ink sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem]">
-            Como aproveitar a maior janela de oportunidade da sua carreira{" "}
-            <span className="block text-[0.55em] font-medium text-ink-soft sm:inline sm:text-[0.4em]">
-              (antes que ela se feche)
-            </span>
+            Domine IA aplicada à sua área antes que isso deixe de ser um diferencial no mundo CLT.
           </h1>
         </Reveal>
 
         <Reveal slow immediate as="p" className="mx-auto mt-6 max-w-[640px] text-[17px] leading-relaxed text-ink-soft md:text-[19px]">
-          O painel para você aprender com <u className="hero-underline">líderes</u> e{" "}
-          <u className="hero-underline">executivos</u> o caminho pra se tornar o profissional que eles premiam e{" "}
-          <u className="hero-underline">promovem</u> na era da <u className="hero-underline">IA</u>.
+          Criamos um <u className="hero-underline">passo a passo</u> pra quem não é de tecnologia,
+          mas sabe que precisa usar <u className="hero-underline">IA</u> pra entregar{" "}
+          <u className="hero-underline">melhor e mais rápido</u>.
         </Reveal>
 
         <Reveal slow immediate as="div" className="mx-auto mt-10 max-w-[520px]">
