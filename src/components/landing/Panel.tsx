@@ -23,7 +23,6 @@ const GUESTS: Guest[] = [
     imageAlt: "Foto de Digo Lemos",
   },
   { name: "Em breve...", showSilhouette: true },
-  { name: "Em breve...", showSilhouette: true },
 ];
 
 function Silhouette() {
@@ -39,16 +38,10 @@ export function Panel() {
   return (
     <section id="painel" className="mx-auto max-w-[1200px] px-5 py-20">
       <Reveal>
-        <p className="font-mono text-[11px] uppercase tracking-wider text-ink-muted">Painel</p>
-        <h2 className="mt-2 font-display text-4xl font-bold text-ink md:text-5xl">
-          Convidados do Painel
-        </h2>
-        <p className="mt-3 max-w-[560px] text-[16px] text-ink-soft">
-          Quem já confirmou presença. Arraste ou use as setas.
-        </p>
+        <h2 className="font-display text-4xl font-bold text-ink md:text-5xl">Seus instrutores</h2>
       </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="mx-auto mt-6 grid max-w-[800px] grid-cols-1 gap-6 md:grid-cols-2">
         {GUESTS.map((g, i) => (
           <Reveal key={i} as="article" className="overflow-hidden rounded-[16px] bg-surface shadow-[var(--shadow-card)]">
             <div className="relative flex aspect-[4/5] items-center justify-center bg-canvas-deep overflow-hidden">
@@ -62,7 +55,7 @@ export function Panel() {
               )}
               {g.showSilhouette && <Silhouette />}
               <span className="absolute bottom-3 left-3 rounded-full bg-black/70 px-2 py-1 font-mono text-[10px] tracking-wider text-white z-10">
-                {String(i + 1).padStart(2, "0")}/03
+                {String(i + 1).padStart(2, "0")}/{String(GUESTS.length).padStart(2, "0")}
               </span>
             </div>
             <div className="p-6">

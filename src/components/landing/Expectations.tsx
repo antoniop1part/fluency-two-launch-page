@@ -40,7 +40,7 @@ export function Expectations() {
     <section id="agenda" className="mx-auto max-w-[1200px] px-5 py-20">
       <Reveal>
         <h2 className="font-display text-4xl font-bold text-ink md:text-5xl">
-          O que você pode esperar da nossa aula:
+          O que esperar | 09/09
         </h2>
         <p className="mt-3 text-[16px] text-ink-soft">
           Esses são os 4 principais bloqueios que vamos resolver.
